@@ -10,18 +10,16 @@
         <v-toolbar dense flat class="mb-3">
           <v-toolbar-title>Current Locations</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn class="mr-4" color="primary" to="/register"
-            >Add Administrator</v-btn
-          >
+          <v-btn class="mr-4" color="primary">Add Administrator</v-btn>
           <v-btn color="primary" to="/register">Add Location</v-btn>
         </v-toolbar>
         <v-data-table
-          :headers="orgHeaders"
+          :headers="locHeaders"
           :items="orgs"
           :items-per-page="10"
           class="elevation-1"
         >
-          <template v-slot:item.services="{ value }"
+          <template v-slot:item.requirements="{ value }"
             ><div v-for="(svc, idx) of value" :key="idx">
               {{ svc.name }}
             </div></template
@@ -43,64 +41,61 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { Organization } from "@/models/organization";
+import { Location } from "../models/location";
 
-interface ExtOrganization extends Organization {
+interface ExtLocation extends Location {
   actions: any;
 }
 
 @Component
-export default class ManageOrg extends Vue {
-  private orgHeaders = [
+export default class ManageLocations extends Vue {
+  private locHeaders = [
     {
-      text: "Organization",
+      text: "Facility",
       align: "start",
       sortable: true,
       value: "name"
     },
-    { text: "Status", value: "status", sortable: true },
-    { text: "Services", value: "services", sortable: false },
-    { text: "Registered Employees", value: "employeeCount", sortable: true },
-    { text: "Last Updated", value: "updated", sortable: true },
-    { text: "Pending Actions", value: "actions", sortable: false }
+    { text: "Entry Point", value: "entry", sortable: true },
+    { text: "Requirements", value: "requirements", sortable: false },
+    { text: "Actions", value: "actions", sortable: false, align: "center" }
   ];
 
-  private orgs: ExtOrganization[] = [
+  private orgs: ExtLocation[] = [
     {
       id: "1",
-      name: "ABC Cleaners, Inc.",
-      sourceId: "",
-      status: "Essential",
-      services: [
+      name: "Victoria Villa",
+      entry: "Cleaners",
+      requirements: [
         {
           id: "1",
-          name: "Medical Facility",
-          icon: "mdi-medical-bag"
+          name: "Name"
         },
         {
           id: "2",
-          name: "Cleaning",
-          icon: "mdi-broom"
+          name: "Essential Service"
+        },
+        {
+          id: "3",
+          name: "COVID-19 Clear"
         }
       ],
-      employeeCount: 15,
-      updated: "2020-04-09",
       actions: ["update"]
     },
     {
-      id: "2",
-      name: "John's Cleaners",
-      sourceId: "",
-      status: "Non-Essential",
-      services: [
+      id: "1",
+      name: "Victoria Villa",
+      entry: "Sanitation Services",
+      requirements: [
+        {
+          id: "1",
+          name: "Name"
+        },
         {
           id: "2",
-          name: "Cleaning",
-          icon: "mdi-broom"
+          name: "Essential Service"
         }
       ],
-      employeeCount: 8,
-      updated: "2020-03-08",
       actions: ["update"]
     }
   ];

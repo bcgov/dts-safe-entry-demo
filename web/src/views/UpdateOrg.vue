@@ -58,7 +58,7 @@ import { Organization } from "@/models/organization";
 import EmployeesTable from "./EmployeesTable.vue";
 
 @Component({ components: { EmployeesTable } })
-export default class ManageOrg extends Vue {
+export default class UpdateOrg extends Vue {
   private record: Organization = {
     id: "1",
     sourceId: "BC989125",

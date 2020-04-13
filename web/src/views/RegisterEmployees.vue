@@ -65,7 +65,7 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component
-export default class ManageOrg extends Vue {
+export default class RegisterEmployees extends Vue {
   private employeeHeaders = [
     {
       text: "Employee Name",

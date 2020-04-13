@@ -3,7 +3,7 @@ import OidcCallbackError from "@/components/auth/OidcCallbackError.vue";
 import { AppConfig } from "@/models/appConfig";
 import IssuerStore from "@/store";
 import PreRegister from "@/views/PreRegister.vue";
-import ManageOrg from "@/views/ManageOrg.vue";
+import ManageLocations from "@/views/ManageLocations.vue";
 import RegisterOrg from "@/views/RegisterOrg.vue";
 import RegisterEmployees from "@/views/RegisterEmployees.vue";
 import UpdateOrg from "@/views/UpdateOrg.vue";
@@ -30,7 +30,7 @@ function router(config: AppConfig): VueRouter {
     {
       path: "/manage",
       name: "Manage Organizations",
-      component: ManageOrg,
+      component: ManageLocations,
       meta: {
         isPublic: true
       }
