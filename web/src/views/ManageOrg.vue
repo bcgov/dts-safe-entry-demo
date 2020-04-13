@@ -3,14 +3,17 @@
     <v-row>
       <v-col>
         <h2 class="my-4 display-1">
-          Manage your Organizations
+          Safe Entry BC Location Registry
         </h2>
         <v-skeleton-loader boilerplate type="paragraph"></v-skeleton-loader>
         <br />
         <v-toolbar dense flat class="mb-3">
-          <v-toolbar-title>Current Organizations</v-toolbar-title>
+          <v-toolbar-title>Current Locations</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn color="primary" to="/register">Add Organization</v-btn>
+          <v-btn class="mr-4" color="primary" to="/register"
+            >Add Administrator</v-btn
+          >
+          <v-btn color="primary" to="/register">Add Location</v-btn>
         </v-toolbar>
         <v-data-table
           :headers="orgHeaders"
@@ -25,7 +28,10 @@
           >
 
           <template v-slot:item.actions="{}"
-            ><v-btn small outlined to="/update">Update</v-btn></template
+            ><v-btn class="mr-2" small outlined>View</v-btn>
+            <v-btn class="mr-2" small outlined to="/update">Update</v-btn>
+            <v-btn class="mr-2" small outlined>Test</v-btn>
+            <v-btn small outlined>QR Code</v-btn></template
           >
         </v-data-table>
       </v-col>
