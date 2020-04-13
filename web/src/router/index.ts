@@ -4,9 +4,9 @@ import { AppConfig } from "@/models/appConfig";
 import IssuerStore from "@/store";
 import PreRegister from "@/views/PreRegister.vue";
 import ManageLocations from "@/views/ManageLocations.vue";
-import RegisterOrg from "@/views/RegisterOrg.vue";
+import AddLocation from "@/views/AddLocation.vue";
 import RegisterEmployees from "@/views/RegisterEmployees.vue";
-import UpdateOrg from "@/views/UpdateOrg.vue";
+import UpdateLocation from "@/views/UpdateLocation.vue";
 import Unauthorized from "@/views/Unauthorized.vue";
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
@@ -39,7 +39,7 @@ function router(config: AppConfig): VueRouter {
     {
       path: "/register",
       name: "Register Organization",
-      component: RegisterOrg,
+      component: AddLocation,
       meta: {
         isPublic: true
       }
@@ -47,22 +47,22 @@ function router(config: AppConfig): VueRouter {
     },
     {
       path: "/update",
-      name: "Update Organization",
-      component: UpdateOrg,
+      name: "Update Location",
+      component: UpdateLocation,
       meta: {
         isPublic: true
       }
       // beforeEnter: validToken
     },
-    {
-      path: "/employees",
-      name: "Manage Employees",
-      component: RegisterEmployees,
-      meta: {
-        isPublic: true
-      }
-      // beforeEnter: validToken
-    },
+    // {
+    //   path: "/employees",
+    //   name: "Manage Employees",
+    //   component: RegisterEmployees,
+    //   meta: {
+    //     isPublic: true
+    //   }
+    //   // beforeEnter: validToken
+    // },
     // {
     //   // required for backwards compatibility with old issuer app
     //   path: "/validate",
