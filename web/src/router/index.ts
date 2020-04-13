@@ -2,7 +2,6 @@ import OidcCallback from "@/components/auth/OidcCallback.vue";
 import OidcCallbackError from "@/components/auth/OidcCallbackError.vue";
 import { AppConfig } from "@/models/appConfig";
 import IssuerStore from "@/store";
-import Home from "@/views/Home.vue";
 import PreRegister from "@/views/PreRegister.vue";
 import ManageOrg from "@/views/ManageOrg.vue";
 import RegisterOrg from "@/views/RegisterOrg.vue";
@@ -22,15 +21,6 @@ function router(config: AppConfig): VueRouter {
     {
       path: "/",
       name: "Home",
-      component: Home,
-      meta: {
-        isPublic: true
-      }
-      // beforeEnter: validToken
-    },
-    {
-      path: "/pre-register",
-      name: "Pre-Registration",
       component: PreRegister,
       meta: {
         isPublic: true

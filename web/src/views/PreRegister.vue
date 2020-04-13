@@ -3,8 +3,17 @@
     <v-row>
       <v-col>
         <h1 class="my-4 display-1">
-          Registering your Business as an Essential Service
+          Contact-less identity verification for restricted areas.
         </h1>
+        <p>
+          Welcome to Safe Entry BC, where you can configure a contact-less
+          request for identity information for controlling access to locations
+          under your control.
+        </p>
+        <p>
+          Ready to get started? Use the links below. Use the login link in the
+          top left if you are returning to the service.
+        </p>
         <v-skeleton-loader boilerplate type="paragraph"></v-skeleton-loader>
         <br />
         <v-skeleton-loader boilerplate type="sentences"></v-skeleton-loader>
@@ -69,8 +78,7 @@
               <div class="num-body">
                 <v-expansion-panel-header
                   ><h3>
-                    Register your Company/Organization as an BC Essential
-                    Service
+                    Create Safe Entry Points
                   </h3></v-expansion-panel-header
                 >
                 <v-expansion-panel-content>
@@ -79,7 +87,7 @@
                     type="paragraph"
                   ></v-skeleton-loader>
                   <v-btn to="/manage" color="primary" class="my-2"
-                    >Register your Organization</v-btn
+                    >Get Started</v-btn
                   >
                 </v-expansion-panel-content>
               </div>
