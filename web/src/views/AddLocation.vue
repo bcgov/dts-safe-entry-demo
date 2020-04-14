@@ -16,17 +16,24 @@
           <v-container>
             <v-row>
               <v-col cols="12" md="4">
-                <v-text-field label="Facility" required></v-text-field>
+                <v-label>Facility</v-label>
+                <v-text-field
+                  placeholder="Victoria Villa"
+                  single-line
+                  outlined
+                  required
+                ></v-text-field>
               </v-col>
             </v-row>
             <v-row>
               <v-col cols="12" md="4">
-                <v-text-field label="Entry Point" required></v-text-field>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" md="4">
-                <v-text-field label="Facility" required></v-text-field>
+                <v-label>Entry Point</v-label>
+                <v-text-field
+                  placeholder="Cleaners"
+                  single-line
+                  outlined
+                  required
+                ></v-text-field>
               </v-col>
             </v-row>
             <v-row>
@@ -124,16 +131,16 @@ export default class RegisterOrg extends Vue {
   private serviceOptions: Requirement[] = [
     {
       id: "1",
-      name: "Name"
+      name: "Name",
     },
     {
       id: "1",
-      name: "Essential Service"
+      name: "Essential Service",
     },
     {
       id: "1",
-      name: "COVID-19 Clear"
-    }
+      name: "COVID-19 Clear",
+    },
   ];
   private services: Requirement[] = [];
 

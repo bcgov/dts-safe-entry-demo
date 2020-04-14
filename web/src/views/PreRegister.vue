@@ -6,7 +6,7 @@
           Contact-less identity verification for restricted areas.
         </h1>
         <p>
-          Welcome to Safe Entry BC, where you can configure a contact-less
+          Welcome to SafeEntryBC, where you can configure a contact-less
           request for identity information for controlling access to locations
           under your control.
         </p>

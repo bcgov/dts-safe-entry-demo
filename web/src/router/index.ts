@@ -5,7 +5,6 @@ import IssuerStore from "@/store";
 import PreRegister from "@/views/PreRegister.vue";
 import ManageLocations from "@/views/ManageLocations.vue";
 import AddLocation from "@/views/AddLocation.vue";
-import RegisterEmployees from "@/views/RegisterEmployees.vue";
 import UpdateLocation from "@/views/UpdateLocation.vue";
 import Unauthorized from "@/views/Unauthorized.vue";
 import Vue from "vue";

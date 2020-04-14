@@ -2,7 +2,7 @@ module.exports = {
   pages: {
     index: {
       entry: 'src/main.ts',
-      title: 'Safe Entry BC',
+      title: 'SafeEntryBC',
     }
   }
 }

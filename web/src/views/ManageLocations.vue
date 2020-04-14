@@ -3,7 +3,7 @@
     <v-row>
       <v-col>
         <h2 class="my-4 display-1">
-          Safe Entry BC Location Registry
+          SafeEntryBC Location Registry
         </h2>
         <v-skeleton-loader boilerplate type="paragraph"></v-skeleton-loader>
         <br />

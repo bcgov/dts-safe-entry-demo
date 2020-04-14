@@ -17,19 +17,26 @@
 
         <v-form v-model="valid">
           <v-container>
-            <v-row>
+                     <v-row>
               <v-col cols="12" md="4">
-                <v-text-field label="Facility" required></v-text-field>
+                <v-label>Facility</v-label>
+                <v-text-field
+                  value="Victoria Villa"
+                  single-line
+                  outlined
+                  required
+                ></v-text-field>
               </v-col>
             </v-row>
             <v-row>
               <v-col cols="12" md="4">
-                <v-text-field label="Entry Point" required></v-text-field>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" md="4">
-                <v-text-field label="Facility" required></v-text-field>
+                <v-label>Entry Point</v-label>
+                <v-text-field
+                  value="Cleaners"
+                  single-line
+                  outlined
+                  required
+                ></v-text-field>
               </v-col>
             </v-row>
             <v-row>
@@ -58,7 +65,7 @@
           <v-autocomplete
             label="Orgbook Search"
             placeholder="Start typing to Search"
-            prepend-icon="mdi-business"
+            prepend-icon="mdi-office-building"
             return-object
           ></v-autocomplete>
         </v-card>
