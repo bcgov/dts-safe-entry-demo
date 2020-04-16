@@ -40,7 +40,7 @@
       </v-btn>
     </div>
     <div v-else>
-      <v-btn outlined>Log in</v-btn>
+      <v-btn outlined to="/manage">Log in</v-btn>
     </div>
   </v-app-bar>
 </template>
