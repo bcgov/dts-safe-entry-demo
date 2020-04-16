@@ -71,7 +71,7 @@
         <v-toolbar dense flat class="mb-3">
           <v-toolbar-title>Credentials Required for Access</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn class="mr-4" color="primary" href="https://long-term-care-facility.vonx.io/" target="_blank">Test</v-btn>
+          <v-btn class="mr-4" color="primary" href="https://long-term-care-facility.vonx.io/authorize" target="_blank">Test</v-btn>
           <v-btn color="primary">Export</v-btn>
         </v-toolbar>
 
