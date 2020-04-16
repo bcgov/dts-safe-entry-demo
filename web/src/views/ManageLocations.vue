@@ -26,10 +26,8 @@
           >
 
           <template v-slot:item.actions="{}"
-            ><v-btn class="mr-2" small outlined>View</v-btn>
-            <v-btn class="mr-2" small outlined to="/update">Update</v-btn>
-            <v-btn class="mr-2" small outlined>Test</v-btn>
-            <v-btn small outlined>QR Code</v-btn></template
+            ><v-btn class="mr-2" small outlined to="/update">Update</v-btn>
+            <v-btn small outlined href="https://long-term-care-facility.vonx.io/authorize" target="_blank">QR Code</v-btn></template
           >
         </v-data-table>
       </v-col>
@@ -69,11 +67,11 @@ export default class ManageLocations extends Vue {
       requirements: [
         {
           id: "1",
-          name: "Name"
+          name: "Verified Person: Surname Only"
         },
         {
           id: "2",
-          name: "Essential Service"
+          name: "Essential Service Authorization: Location-specific"
         },
         {
           id: "3",
@@ -89,11 +87,11 @@ export default class ManageLocations extends Vue {
       requirements: [
         {
           id: "1",
-          name: "Name"
+          name: "Verified Person: Full Name"
         },
         {
           id: "2",
-          name: "Essential Service"
+          name: "Essential Service Authorization: General"
         }
       ],
       actions: ["update"]

@@ -16,16 +16,7 @@
         <br />
 
         <v-toolbar dense flat class="mb-3">
-          <v-toolbar-title>Find your Organization</v-toolbar-title>
-        </v-toolbar>
-        <v-skeleton-loader
-          boilerplate
-          type="sentences"
-          class="mt-2"
-        ></v-skeleton-loader>
-
-        <v-toolbar dense flat class="mb-3">
-          <v-toolbar-title>Services Offered</v-toolbar-title>
+          <v-toolbar-title>Credentials Required for Access</v-toolbar-title>
         </v-toolbar>
 
         <v-card outlined>
