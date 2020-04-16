@@ -31,6 +31,13 @@
                     boilerplate
                     type="sentences"
                   ></v-skeleton-loader>
+                  <v-btn
+                    href="https://github.com/bcgov/identity-kit-poc/blob/master/docs/GettingApp.md"
+                    target="_blank"
+                    color="primary"
+                    class="my-2"
+                    >Instructions</v-btn
+                  >
                 </v-expansion-panel-content>
               </div>
             </div>
@@ -49,6 +56,16 @@
                     boilerplate
                     type="paragraph"
                   ></v-skeleton-loader>
+                  <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
+                    Please <b>skip this step</b> for this demo. The link is active and goes to the correct information.
+                  </v-alert>
+                  <v-btn
+                    href="https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card/login-with-card/mobile-card/download-bcsc-app"
+                    target="_blank"
+                    color="primary"
+                    class="my-2"
+                    >Instructions</v-btn
+                  >
                 </v-expansion-panel-content>
               </div>
             </div>
@@ -68,6 +85,26 @@
                     boilerplate
                     type="sentences"
                   ></v-skeleton-loader>
+                  <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
+                    For this demo please use the <b>Unverified Person</b> button. The
+                    "Verified Person" link is for a limited access program requiring
+                    you have both a program invitation and the
+                    BC Gov Services Card App with a digital BC Services Card (from the previous step).
+                  </v-alert>
+                  <v-btn
+                    href="https://openvp-issuer.pathfinder.gov.bc.ca/"
+                    target="_blank"
+                    color="primary"
+                    class="my-2 mr-2"
+                    >Unverified Person</v-btn
+                  ><v-btn
+                    href="https://identity-kit.pathfinder.gov.bc.ca/"
+                    target="_blank"
+                    color="tertiary"
+                    outlined
+                    class="my-2"
+                    >Verified Person</v-btn
+                  >
                 </v-expansion-panel-content>
               </div>
             </div>
@@ -86,7 +123,12 @@
                     boilerplate
                     type="paragraph"
                   ></v-skeleton-loader>
-                  <v-btn to="/manage" color="primary" class="my-2"
+                  <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
+                    Skipped in this demo but to be added between this screen and the next is a
+                    request for the presentation of the user's <i>Verified Person</i> credential,
+                    providing high assurance authentication.
+                  </v-alert>
+                  <v-btn to="/register" color="primary" class="my-2"
                     >Get Started</v-btn
                   >
                 </v-expansion-panel-content>

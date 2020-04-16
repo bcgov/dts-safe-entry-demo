@@ -41,14 +41,25 @@
             </v-row>
             <v-row>
               <v-col cols="12" md="4">
+                <v-label>Address</v-label>
+                <v-textarea
+                  value="4734 Johnson Street, Victoria, BC, V8M 3W2"
+                  single-line
+                  outlined
+                  required
+                ></v-textarea>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="12" md="4">
                 <h3>Settings:</h3>
                 <v-container>
                   <v-row>
-                    <v-checkbox class="mr-4" label="Published"></v-checkbox>
+                    <v-checkbox class="mr-4" label="Publicly Discoverable"></v-checkbox>
                     <v-icon>mdi-help-circle-outline</v-icon>
                   </v-row>
                   <v-row>
-                    <v-checkbox class="mr-4" label="Audit"></v-checkbox>
+                    <v-checkbox class="mr-4" label="Audited"></v-checkbox>
                     <v-icon>mdi-help-circle-outline</v-icon>
                   </v-row>
                 </v-container>
@@ -58,22 +69,9 @@
         </v-form>
 
         <v-toolbar dense flat class="mb-3">
-          <v-toolbar-title>Organization Search</v-toolbar-title>
-        </v-toolbar>
-
-        <v-card outlined class="mb-8 pa-3">
-          <v-autocomplete
-            label="Orgbook Search"
-            placeholder="Start typing to Search"
-            prepend-icon="mdi-office-building"
-            return-object
-          ></v-autocomplete>
-        </v-card>
-
-        <v-toolbar dense flat class="mb-3">
-          <v-toolbar-title>Access Requirements</v-toolbar-title>
+          <v-toolbar-title>Credentials Required for Access</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn class="mr-4" color="primary">Test</v-btn>
+          <v-btn class="mr-4" color="primary" href="https://long-term-care-facility.vonx.io/" target="_blank">Test</v-btn>
           <v-btn color="primary">Export</v-btn>
         </v-toolbar>
 
@@ -81,7 +79,7 @@
           <v-card-text class="py-1">
             <v-row align="center" justify="start">
               <v-col v-if="!services.length">
-                <v-alert type="info" class="mb-0">No services added</v-alert>
+                <v-alert type="info" class="mb-0">No credentials required</v-alert>
               </v-col>
               <v-col
                 v-for="(service, i) in services"
@@ -134,15 +132,27 @@ export default class RegisterOrg extends Vue {
   private serviceOptions: Requirement[] = [
     {
       id: "1",
-      name: "Name"
+      name: "Verified Person: Surname Only",
     },
     {
-      id: "1",
-      name: "Essential Service"
+      id: "2",
+      name: "Verified Person: Full Name",
     },
     {
-      id: "1",
-      name: "COVID-19 Clear"
+      id: "3",
+      name: "Verified Person: Possession Only",
+    },
+    {
+      id: "4",
+      name: "Essential Service Authorization: General",
+    },
+    {
+      id: "5",
+      name: "Essential Service Authorization: Location-specific",
+    },
+    {
+      id: "6",
+      name: "COVID-19 Clear",
     }
   ];
   private services: Requirement[] = [];
