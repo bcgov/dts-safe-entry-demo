@@ -17,7 +17,7 @@
 
         <v-form v-model="valid">
           <v-container>
-                     <v-row>
+            <v-row>
               <v-col cols="12" md="4">
                 <v-label>Facility</v-label>
                 <v-text-field
@@ -55,7 +55,10 @@
                 <h3>Settings:</h3>
                 <v-container>
                   <v-row>
-                    <v-checkbox class="mr-4" label="Publicly Discoverable"></v-checkbox>
+                    <v-checkbox
+                      class="mr-4"
+                      label="Publicly Discoverable"
+                    ></v-checkbox>
                     <v-icon>mdi-help-circle-outline</v-icon>
                   </v-row>
                   <v-row>
@@ -71,7 +74,13 @@
         <v-toolbar dense flat class="mb-3">
           <v-toolbar-title>Credentials Required for Access</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn class="mr-4" color="primary" href="https://long-term-care-facility.vonx.io/authorize" target="_blank">Test</v-btn>
+          <v-btn
+            class="mr-4"
+            color="primary"
+            href="https://long-term-care-facility.vonx.io/authorize"
+            target="_blank"
+            >Test</v-btn
+          >
           <v-btn color="primary">Export</v-btn>
         </v-toolbar>
 
@@ -79,7 +88,9 @@
           <v-card-text class="py-1">
             <v-row align="center" justify="start">
               <v-col v-if="!services.length">
-                <v-alert type="info" class="mb-0">No credentials required</v-alert>
+                <v-alert type="info" class="mb-0"
+                  >No credentials required</v-alert
+                >
               </v-col>
               <v-col
                 v-for="(service, i) in services"
@@ -132,27 +143,27 @@ export default class RegisterOrg extends Vue {
   private serviceOptions: Requirement[] = [
     {
       id: "1",
-      name: "Verified Person: Surname Only",
+      name: "Verified Person: Surname Only"
     },
     {
       id: "2",
-      name: "Verified Person: Full Name",
+      name: "Verified Person: Full Name"
     },
     {
       id: "3",
-      name: "Verified Person: Possession Only",
+      name: "Verified Person: Possession Only"
     },
     {
       id: "4",
-      name: "Essential Service Authorization: General",
+      name: "Essential Service Authorization: General"
     },
     {
       id: "5",
-      name: "Essential Service Authorization: Location-specific",
+      name: "Essential Service Authorization: Location-specific"
     },
     {
       id: "6",
-      name: "COVID-19 Clear",
+      name: "COVID-19 Clear"
     }
   ];
   private services: Requirement[] = [];

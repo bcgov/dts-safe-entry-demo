@@ -27,7 +27,13 @@
 
           <template v-slot:item.actions="{}"
             ><v-btn class="mr-2" small outlined to="/update">Update</v-btn>
-            <v-btn small outlined href="https://long-term-care-facility.vonx.io/authorize" target="_blank">QR Code</v-btn></template
+            <v-btn
+              small
+              outlined
+              href="https://long-term-care-facility.vonx.io/authorize"
+              target="_blank"
+              >QR Code</v-btn
+            ></template
           >
         </v-data-table>
       </v-col>
