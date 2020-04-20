@@ -4,8 +4,8 @@
 }
 
 .issuer-logo {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 275px;
 }
 
 .v-application .app-title {
