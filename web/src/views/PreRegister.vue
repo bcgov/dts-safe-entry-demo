@@ -44,7 +44,7 @@
           </v-expansion-panel>
           <v-expansion-panel>
             <div class="num-row">
-              <div class="number">3</div>
+              <div class="number">2</div>
               <div class="num-body">
                 <v-expansion-panel-header
                   ><h3>
@@ -57,10 +57,11 @@
                     type="sentences"
                   ></v-skeleton-loader>
                   <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
-                    For this demo please click on and use the <b>Unverified Person</b> button. The
-                    "Verified Person" link is for a limited access program requiring
-                    you have both a program invitation and the
-                    BC Gov Services Card App with a digital BC Services Card.
+                    For this demo please use the <b>Unverified Person</b> button to get
+                    a (very) unofficial credential. The
+                    "Verified Person" link is for a limited access program that allows
+                    invited participants to get a true "Verified Person" credential based
+                    on data from the digital version of their BC Services Card.
                   </v-alert>
                   <v-btn
                     href="https://openvp-issuer.pathfinder.gov.bc.ca/"
@@ -82,7 +83,7 @@
           </v-expansion-panel>
           <v-expansion-panel>
             <div class="num-row">
-              <div class="number">4</div>
+              <div class="number">3</div>
               <div class="num-body">
                 <v-expansion-panel-header
                   ><h3>
