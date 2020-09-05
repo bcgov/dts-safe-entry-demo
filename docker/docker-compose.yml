@@ -1,0 +1,19 @@
+version: "3"
+services:
+  dts-safe-entry-demo:
+    image: dts-safe-entry-demo:latest
+    environment:
+      - WEB_HOST_NAME=${WEB_HOST_NAME}
+      - WEB_HOST_PORT=${WEB_HOST_PORT}
+      - WEB_HOST_TLS=${WEB_HOST_TLS}
+      - API_HOST=${API_HOST}
+      - API_PORT=${API_PORT}
+    volumes:
+      - ./web/config/Caddyfile:/etc/Caddyfile
+    ports:
+      - ${WEB_HOST_PORT}:${WEB_HOST_PORT}
+    networks:
+      - dts_safe_entry
+
+networks:
+  dts_safe_entry:
