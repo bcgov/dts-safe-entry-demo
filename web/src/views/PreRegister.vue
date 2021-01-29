@@ -12,7 +12,7 @@
         </p>
         <p>
           Ready to get started? Use the links below. Use the login link in the
-          top left if you are returning to the service.
+          top right if you are returning to the service.
         </p>
         <v-skeleton-loader boilerplate type="paragraph"></v-skeleton-loader>
         <br />
