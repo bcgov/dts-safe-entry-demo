@@ -25,7 +25,7 @@
     "successText": "To try out your new credential:",
     "links": [
       {
-        "url": "https://csb-audio.pathfinder.gov.bc.ca",
+        "url": "https://csb-audio.apps.silver.devops.gov.bc.ca",
         "description": "CSB Audio"
       }
     ]
