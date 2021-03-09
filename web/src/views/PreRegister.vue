@@ -64,13 +64,13 @@
                     on data from the digital version of their BC Services Card.
                   </v-alert>
                   <v-btn
-                    href="https://openvp-issuer.pathfinder.gov.bc.ca/"
+                    href="https://openvp-issuer.apps.silver.devops.gov.bc.ca/"
                     target="_blank"
                     color="primary"
                     class="my-2 mr-2"
                     >Unverified Person</v-btn
                   ><v-btn
-                    href="https://identity-kit.pathfinder.gov.bc.ca/"
+                    href="https://identity-kit.apps.silver.devops.gov.bc.ca/"
                     target="_blank"
                     color="tertiary"
                     outlined
