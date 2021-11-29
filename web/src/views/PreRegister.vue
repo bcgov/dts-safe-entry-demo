@@ -70,7 +70,7 @@
                     class="my-2 mr-2"
                     >Unverified Person</v-btn
                   ><v-btn
-                    href="https://identity-kit.apps.silver.devops.gov.bc.ca/"
+                    href="https://identity-kit.vonx.io/"
                     target="_blank"
                     color="tertiary"
                     outlined
